@@ -15,7 +15,7 @@ public class windyBoy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<BoxCollider>().isTrigger = true;
     }
 
     // Update is called once per frame
