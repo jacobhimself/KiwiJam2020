@@ -17,6 +17,7 @@ public class ScoreController : MonoBehaviour
     public float scoreDecreasePerFrame = 0.1f;
     public playerBalance pB;
     public Text displayScore;
+    public Text loseMessage;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,17 @@ public class ScoreController : MonoBehaviour
            //score-=1;
         displayScore.text = score.ToString();
             
+
+        if(score <= 0.0f)
+        {
+            loseMessage.verticalOverflow = VerticalWrapMode.Overflow;
+            // displayScore.fontSize = 50;
+            // displayScore.rectTransform.position = new Vector3(0,94,0);
+            
+            // displayScore.color = Color.red;
+            
+            // displayScore.text = "SCRAP METAL...";
+        }
         
     }
 }
