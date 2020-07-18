@@ -31,24 +31,24 @@ public class playerBalance : MonoBehaviour
     }
 
 
-void updateBalance(){
-    if(isWindy){
-        currentBalance += windForce;
-    }
-    
-    if(Input.GetKey(KeyCode.L) && currentBalance <= maxRightLean){
-            currentBalance += counterBalanceStrength;
+    void updateBalance(){
+        Debug.Log("PLAYER BALANCE : " + currentBalance);
+        if (isWindy){
+            currentBalance += windForce;
         }
-    if(Input.GetKey(KeyCode.K) && currentBalance >= maxLeftLean)
-    {
-        currentBalance -= counterBalanceStrength;
-    }
     
-    if(currentBalance <= maxLeftLean){
-        Debug.Log("You fell to the left");
+        if(Input.GetKey(KeyCode.L) && currentBalance <= maxRightLean){
+                currentBalance += counterBalanceStrength;
+        }
+        if(Input.GetKey(KeyCode.K) && currentBalance >= maxLeftLean)
+        {
+            currentBalance -= counterBalanceStrength;
+        }
+        if (currentBalance <= maxLeftLean){
+            Debug.Log("You fell to the left");
+        }
+        if(currentBalance >= maxRightLean){
+            Debug.Log("You fell off to the right");
+        }
     }
-    if(currentBalance >= maxRightLean){
-        Debug.Log("You fell off to the right");
-    }
-}
 }
