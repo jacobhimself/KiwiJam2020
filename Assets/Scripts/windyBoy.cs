@@ -24,7 +24,6 @@ public class windyBoy : MonoBehaviour
     }
         private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Helloworld");
         player.isWindy = true;
         player.windForce = this.windDirection * this.windStrength;
     }
