@@ -9,8 +9,8 @@ public class SimpleBalanceBar : MonoBehaviour
    public playerBalance playerBalance;
 
 void Start() {
-    balanceBar.minValue = -45.0f;
-    balanceBar.maxValue = 45.0f;    
+    balanceBar.minValue = playerBalance.maxLeftLean;
+    balanceBar.maxValue = playerBalance.maxRightLean;    
 }
 
 void Update(){
