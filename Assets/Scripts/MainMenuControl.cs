@@ -51,4 +51,19 @@ public class MainMenuControl : MonoBehaviour {
 			isInstructions = true;
 	 	}
 	}
+
+	public void RageQuit()
+	{
+		SceneManager.LoadScene("MainMenu");
+	}
+
+	public void PlayAgain()
+	{
+		SceneManager.LoadScene("SampleScene");
+	}
+
+	public void NextLevel()
+	{
+		SceneManager.LoadScene("Level2");
+	}
 }
