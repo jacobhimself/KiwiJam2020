@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2.unity
     guid: 9979ce8089b234037bc073c1414663c1
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/New Folder/SampleScene.unity
     guid: 3af1c2d6bec98f14c9b195dffb714065
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
